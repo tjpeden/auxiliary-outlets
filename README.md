@@ -7,3 +7,8 @@ I get an error when navigating from a route where I've defined a component for a
 Error: `Cannot activate an already activated outlet`
 
 The `admin` module is my original attempt and reproduction of the problem and the `clients` module represents an alternative approach I tried based on some googling. The second approach does not render the auxiliary outlet component on any but the root route for which it was defined.
+
+## Research
+- Possible cause of issues with the `clients` module: https://github.com/angular/angular/issues/16406
+
+I have also read that there are a number of bugs around auxiliary outlets.
